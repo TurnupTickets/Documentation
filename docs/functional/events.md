@@ -21,6 +21,10 @@ Pod belką z informacjami o ogólnymi znajduję się pole wyboru o nazwie Typ wi
 ## Opis
 Każde wydarzenie jest tworzone w systemie i posiada następujące informacje:
 
+## Kategorie wydarzeń
+Każde wydarzenie ma przypisaną konkretną kategorię główną oraz kategorie do których należy, dzięki którym można przedstawić to wydarznie użytkownikowi pod kilkoma adresami np. Wydarzenia/Grubson lub Pozostałe/Grubson. 
+Nazwy kategorii powinny być zależne od języka strony, ale każdy język powinien posiadać taką samą ilość kategorii. 
+
 ## Statystyki
 Statystyki wydarzenia informują właściciela o danych sprzedażowych w określonych przedziałach czasowych. Dostępne jest także pobranie raportu w formacie PDF.
 
@@ -35,6 +39,7 @@ Każde wydarzenie zawiera następujące dane:
     - Określenie rodzaju wydarzenia (terminowe / bezterminowe)
     - W przypadku wydarzeń terminowych: data rozpoczęcia i zakończenia
     - Strefa czasowa na podstawie lokalizacji
+      (Każde pole z treścią powinno być zależne od języka strony, ale każdy język powinien posiadać taką samą ilość wydarzeń.)
 
 - **Statusy wydarzenia**:
     - Status aktywności po zakończeniu
