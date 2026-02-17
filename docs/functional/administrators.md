@@ -5,8 +5,8 @@ title: Administratorzy
 ## Definicja
 
 Administrator to osoba mająca dostęp do panelu zarządzającego aplikacją. Administrator może otrzymać jedną z określonych ról:
-- Admin
-- Kontrahent
+- Admin - Logowanie do panelu login + hasło oraz z użyciem tokenu 2FA
+- Kontrahent - Logowanie do panelu login + hasło
 
 ## Wymagania bezpieczeństwa
 ### Role i uprawnienia
@@ -101,4 +101,5 @@ Pole przyjmuje wartość procentową. Określa kwotę jaką powinien otrzymać k
 Pole określające format godzin (12h/24h), który zobaczy klient kupujący wydarzenie.
 
 ### Język
-Każdy użytkownik ma ustawiony domyślny język panelu administracyjnego. 
+Każdy użytkownik ma ustawiony domyślny język panelu administracyjnego.
+
