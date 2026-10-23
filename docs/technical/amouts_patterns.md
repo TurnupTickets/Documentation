@@ -80,4 +80,4 @@ Filtr zakresu dat obowiązuje wyłącznie na zakładce Statystyki (nie jest filt
 
 ## Podsumowanie
 
-Cały łańcuch wyliczeń — cena biletu → prowizja serwisowa → rabat → cena do zapłaty → suma zamówienia → prowizja kontrahenta w statystykach — jest wewnętrznie spójny i w pełni zweryfikowany względem działającego kodu. Jedyne miejsce, w którym prowizja kontrahenta ma znaczenie, to zakładka Statystyki wydarzenia i jej eksport PDF — nigdzie w procesie zakupu biletu.
+Cały łańcuch wyliczeń — cena biletu → prowizja serwisowa → rabat → cena do zapłaty → suma zamówienia → prowizja kontrahenta w statystykach — jest wewnętrznie spójny i w pełni zweryfikowany względem działającego kodu. Jedyne miejsce, w którym prowizja kontrahenta ma znaczenie, to zakładka [Statystyki wydarzenia](../functional/event_statistics.md) i jej eksport PDF — nigdzie w procesie zakupu biletu.

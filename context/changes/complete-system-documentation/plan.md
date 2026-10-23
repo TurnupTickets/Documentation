@@ -343,11 +343,11 @@ Not applicable — no data or schema changes. `amouts_patterns.md` is replaced i
 ### Phase 1: Finance accuracy — replace amouts_patterns.md
 
 #### Automated
-- [ ] 1.1 File non-empty with valid frontmatter
-- [ ] 1.2 Build succeeds
+- [x] 1.1 File non-empty with valid frontmatter — 97dbc33
+- [x] 1.2 Build succeeds — 97dbc33
 
 #### Manual
-- [ ] 1.3 Formulas spot-checked against amount_sums.md
+- [x] 1.3 Formulas spot-checked against amount_sums.md — 97dbc33
 
 ### Phase 2: Event statistics / dashboard doc
 
