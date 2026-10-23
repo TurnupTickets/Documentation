@@ -352,11 +352,11 @@ Not applicable — no data or schema changes. `amouts_patterns.md` is replaced i
 ### Phase 2: Event statistics / dashboard doc
 
 #### Automated
-- [ ] 2.1 File exists, non-empty, valid frontmatter
-- [ ] 2.2 Build succeeds
+- [x] 2.1 File exists, non-empty, valid frontmatter — b3d6ae6
+- [x] 2.2 Build succeeds — b3d6ae6
 
 #### Manual
-- [ ] 2.3 Reader can tell what each number means
+- [x] 2.3 Reader can tell what each number means — b3d6ae6
 
 ### Phase 3: Mailing campaigns doc + gap flag
 
