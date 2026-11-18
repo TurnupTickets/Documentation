@@ -1,4 +1,5 @@
 import React, {useEffect, useState, type ReactNode} from 'react';
+import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './PasswordGate.module.css';
 
@@ -36,8 +37,21 @@ export default function Root({children}: {children: ReactNode}): ReactNode {
     setStatus(readStoredHash() === expectedHash ? 'unlocked' : 'locked');
   }, [expectedHash]);
 
+  // Rendered in both states: the gate hides the theme Layout,
+  // which normally emits these tags.
+  const robots = (
+    <Head>
+      <meta name="robots" content="noindex, nofollow" />
+    </Head>
+  );
+
   if (status === 'unlocked') {
-    return <>{children}</>;
+    return (
+      <>
+        {robots}
+        {children}
+      </>
+    );
   }
 
   const onSubmit = async (e: React.FormEvent) => {
@@ -58,6 +72,10 @@ export default function Root({children}: {children: ReactNode}): ReactNode {
 
   return (
     <div className={styles.wrapper}>
+      {robots}
+      <Head>
+        <title>{siteConfig.title}</title>
+      </Head>
       {status === 'locked' && (
         <form className={styles.card} onSubmit={onSubmit}>
           <h1 className={styles.title}>Dokumentacja Turnup Tickets</h1>
