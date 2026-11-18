@@ -1,8 +1,25 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import {createHash} from 'node:crypto';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
+// Load DOCS_PASSWORD from .env (local). In CI it comes from a GitHub secret.
+try {
+  process.loadEnvFile();
+} catch {
+  // no .env file - rely on real environment variables
+}
+
+const docsPassword = process.env.DOCS_PASSWORD;
+if (!docsPassword) {
+  throw new Error(
+    'DOCS_PASSWORD is not set. Copy .env.example to .env and set a password.',
+  );
+}
+// Only the hash is shipped to the browser, never the plain password.
+const docsPasswordHash = createHash('sha256').update(docsPassword).digest('hex');
 
 const config: Config = {
   title: 'Turnup Tickets',
@@ -17,6 +34,13 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'TurnupTickets', // Usually your GitHub org/user name.
   projectName: 'CMS', // Usually your repo name.
+
+  // Keep the password-protected docs out of search engines.
+  noIndex: true,
+
+  customFields: {
+    docsPasswordHash,
+  },
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
