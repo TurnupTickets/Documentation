@@ -191,7 +191,13 @@ Lista zamówień może być filtrowana po:
 Administrator może:
 - pobrać bilety z listy,
 - otworzyć szczegóły zamówienia,
-- anulować zamówienie.
+- anulować zamówienie,
+- wysłać ponownie bilety na e-mail ("Wyślij bilety ponownie" — widoczne tylko dla opłaconych zamówień, które jeszcze nie mają potwierdzonej wysyłki),
+- wysłać ponownie SMS z potwierdzeniem biletu ("Wyślij SMS ponownie" — widoczne tylko dla opłaconych zamówień z zamówioną wysyłką SMS, które jeszcze nie mają potwierdzonej wysyłki SMS).
+
+### Treść SMS z potwierdzeniem biletu
+
+Treść wiadomości SMS wysyłanej po opłaceniu zamówienia (zarówno automatycznie, jak i przy ręcznym "Wyślij SMS ponownie") jest zarządzalna z panelu: **Przełączniki systemowe** (`System → Przełączniki systemowe`), pole "Treść SMS z potwierdzeniem biletu". Dostępne zmienne do wstawienia w treści: `{event_name}` (nazwa wydarzenia), `{order_id}` (numer zamówienia), `{ticket_url}` (link do strony potwierdzenia zamówienia, podstawiany automatycznie). Jeśli pole jest puste, system używa domyślnego szablonu.
 
 ---
 

@@ -361,11 +361,11 @@ Not applicable — no data or schema changes. `amouts_patterns.md` is replaced i
 ### Phase 3: Mailing campaigns doc + gap flag
 
 #### Automated
-- [ ] 3.1 File exists, non-empty, valid frontmatter
-- [ ] 3.2 Build succeeds
+- [x] 3.1 File exists, non-empty, valid frontmatter — 85db1b4
+- [x] 3.2 Build succeeds — 85db1b4
 
 #### Manual
-- [ ] 3.3 Gap statement accuracy re-checked
+- [x] 3.3 Gap statement accuracy re-checked — 85db1b4
 
 ### Phase 4: Back-office config cluster
 
